@@ -20,31 +20,48 @@
 /* CSS Styles in common for all slides */
 .wrapper-one,
 .wrapper-two,
-.wrapper-three {
+.wrapper-three,
+.wrapper-four
+{
   background-color: #eee;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
+  color: transparent;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 24s linear infinite 0s;
 }
 
 /* CSS Styles for each slide */
 /* Just add the image as background attribute and add some animation */
 
 .wrapper-one {
-    background-image: url("./img/portfolio6.jpg");
+    background-image: url("./img/portfolio.jpg");
 }
 
 .wrapper-two {
     background-image: url("./img/portfolio2.jpg");
-  animation: slideTwoAnim 20s infinite;
+  /* animation: slideTwoAnim 6s infinite; */
+  animation-delay: 6s; 
 }
 
 .wrapper-three {
-    background-image: url("./img/portfolio5.jpg");
-  animation: slideThreeAnim 20s infinite;
+    background-image: url("./img/portfolio3.jpg");
+  /* animation-delay: slideTwoAnim 12s infinite; */
+  animation-delay: 12s; 
 }
+
+.wrapper-four {
+  background-image: url("./img/portfolio4.jpg");
+/* animation: slideTwoAnim 18s infinite; */
+animation-delay: 18s; 
+}
+
 
 /* Styles for the text */
 .wrapper-text {
@@ -56,7 +73,7 @@
 }
 
 /* Animations */
-@keyframes slideTwoAnim {
+/* @keyframes slideTwoAnim {
     0%{opacity:0;}
     17%{opacity:0;}
     33%{opacity:1;}
@@ -71,6 +88,14 @@
     67%{opacity:1;}
     83%{opacity:1;}
     100%{opacity:0;}
+} */
+
+@keyframes imageAnimation { 
+  0% { opacity: 0; animation-timing-function: ease-in; }
+  8% { opacity: 1; animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
 }
 
 /* :: Base CSS */
@@ -653,7 +678,7 @@ img {
   }
 }
 .header-area.sticky {
-  background-color: #232323;
+  background-color: rgb(19, 19, 19);
 }
 @media only screen and (max-width: 767px) {
   .header-area {
@@ -970,7 +995,7 @@ img {
 
 /* :: Footer CSS */
 .footer-area {
-  background-color: #232323;
+  background-color: rgb(19, 19, 19);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -980,7 +1005,7 @@ img {
   text-align: center;
 }
 .footer-area .copyright-text p {
-  color: white;
+  color: #afaeae;
   font-weight: 300;
   margin-bottom: 0;
 }
@@ -1033,10 +1058,10 @@ img {
 .footer-links a {
   font-size: 30px;
   padding: 0 20px;
-  color: white;
+  color: #afaeae;
 }
 .footer-links a:hover {
-  color: #192a56;
+  color: #284283;
 }
 @media only screen and (max-width: 767px) {
   .footer-links a {
@@ -1052,14 +1077,15 @@ img {
 
 /* :: Hero Area CSS */
 .hero-area {
-  background-color: #232323;
+  background-color: rgb(19, 19, 19);
   position: relative;
   z-index: 1;
   overflow: hidden;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  height: 40em;
 }
-.hero-area .backEnd-content .dots {
+/* .hero-area .backEnd-content .dots {
   position: absolute;
   right: -200px;
   top: 50%;
@@ -1067,7 +1093,7 @@ img {
   opacity: 0.1;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+} */
 .hero-area .hero-thumbnail,
 .hero-area .hero-content {
   -webkit-box-flex: 0;
@@ -1093,14 +1119,14 @@ img {
 .hero-area .hero-content .line {
   width: 100px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #afaeae;
   margin-bottom: 30px;
   display: block;
 }
 .hero-area .hero-content h2 {
-  color: #ffffff;
+  color: #afaeae;
   font-size: 48px;
-  margin-bottom: 25px;
+  margin-bottom: 125px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-area .hero-content h2 {
@@ -1227,12 +1253,12 @@ img {
   border-bottom: 2px solid;
   border-color: transparent;
   background-color: transparent;
-  color: #ffffff;
+  color: #afaeae;
   border-radius: 0;
   margin: 0 12px;
 }
 .text-center.portfolio-menu .btn.active {
-  border-color: #ffffff; }
+  border-color: #afaeae; }
   .text-center.portfolio-menu .btn:hover, .text-center.portfolio-menu .btn:focus {
   box-shadow: none; }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
