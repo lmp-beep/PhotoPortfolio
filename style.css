@@ -678,7 +678,7 @@ img {
   }
 }
 .header-area.sticky {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(56, 56, 56);
 }
 @media only screen and (max-width: 767px) {
   .header-area {
@@ -995,7 +995,7 @@ img {
 
 /* :: Footer CSS */
 .footer-area {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(56, 56, 56);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1005,7 +1005,7 @@ img {
   text-align: center;
 }
 .footer-area .copyright-text p {
-  color: #afaeae;
+  color: white;
   font-weight: 300;
   margin-bottom: 0;
 }
@@ -1077,7 +1077,7 @@ img {
 
 /* :: Hero Area CSS */
 .hero-area {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(56, 56, 56);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1119,12 +1119,12 @@ img {
 .hero-area .hero-content .line {
   width: 100px;
   height: 1px;
-  background-color: #afaeae;
+  background-color: white;
   margin-bottom: 30px;
   display: block;
 }
 .hero-area .hero-content h2 {
-  color: #afaeae;
+  color: white;
   font-size: 48px;
   margin-bottom: 125px;
 }
@@ -1253,12 +1253,12 @@ img {
   border-bottom: 2px solid;
   border-color: transparent;
   background-color: transparent;
-  color: #afaeae;
+  color: white;
   border-radius: 0;
   margin: 0 12px;
 }
 .text-center.portfolio-menu .btn.active {
-  border-color: #afaeae; }
+  border-color: white; }
   .text-center.portfolio-menu .btn:hover, .text-center.portfolio-menu .btn:focus {
   box-shadow: none; }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
