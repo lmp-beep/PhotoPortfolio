@@ -31,6 +31,19 @@
         }
     });
 
+    // Disable Right Click Save
+    $('img').bind('contextmenu', function(e) {
+        return false;
+    }); 
+
+    // Disable Right Click Save
+    $(document).bind("contextmenu",function(e){
+        e.preventDefault()
+      });
+     
+    // Disable Drag Image to Desktop Save
+    window.ondragstart = function() { return false; } 
+
     // :: Menu Active Code
     $('#menuIcon').on('click', function () {
         $('body').toggleClass('menu-open');
