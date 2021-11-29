@@ -18,10 +18,15 @@
   position: relative;
 }
 /* CSS Styles in common for all slides */
-.wrapper-one,
-.wrapper-two,
-.wrapper-three,
-.wrapper-four
+/* .portfolio-architecture */
+/* .portfolio-macro, */
+/* .portfolio-pets, */
+/* .portfolio-sea, */
+/* .portfolio-sports */
+.portfolio-macro,
+.portfolio-pets,
+.portfolio-sea,
+.portfolio-zoo
 {
   background-color: #eee;
   background-size: cover;
@@ -40,24 +45,36 @@
 /* CSS Styles for each slide */
 /* Just add the image as background attribute and add some animation */
 
-.wrapper-one {
-    background-image: url("./img/portfolio.jpg");
+/* .portfolio-architecture {
+    background-image: url("./img/portfolio-architecture.jpg");
+} */
+
+.portfolio-macro {
+    background-image: url("./img/portfolio-macro.jpg");
+  /* animation: slideTwoAnim 6s infinite; */
+  /* animation-delay: 6s;  */
 }
 
-.wrapper-two {
-    background-image: url("./img/portfolio2.jpg");
-  /* animation: slideTwoAnim 6s infinite; */
+.portfolio-pets {
+    background-image: url("./img/portfolio-pets.jpg");
+  /* animation-delay: slideTwoAnim 12s infinite; */
   animation-delay: 6s; 
 }
 
-.wrapper-three {
-    background-image: url("./img/portfolio3.jpg");
-  /* animation-delay: slideTwoAnim 12s infinite; */
-  animation-delay: 12s; 
+.portfolio-sea {
+  background-image: url("./img/portfolio-sea.jpg");
+/* animation: slideTwoAnim 18s infinite; */
+animation-delay: 12s; 
 }
 
-.wrapper-four {
-  background-image: url("./img/portfolio4.jpg");
+/* .portfolio-sports {
+  background-image: url("./img/portfolio-sports.jpg");
+animation: slideTwoAnim 18s infinite;
+animation-delay: 18s; 
+} */
+
+.portfolio-zoo {
+  background-image: url("./img/portfolio-zoo.jpg");
 /* animation: slideTwoAnim 18s infinite; */
 animation-delay: 18s; 
 }
@@ -1349,4 +1366,3 @@ img {
   height: 220px;
   padding: 15px;
 }
-
